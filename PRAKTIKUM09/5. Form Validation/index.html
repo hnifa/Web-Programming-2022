@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="POST" onsubmit="return tiket()">
+            <h1>Form</h1>
+            <div class="container">
+                <label>Nama Pelanggan</label>
+                <input type="text" name="nama" id="nama" maxlength="30" required>
+                <label>Email </label>
+                <input type="email" name="email" id="email" required>
+                <label>Jam Keberangkatan</label>
+                <input type="time" name="jam" id="jam" required>
+                <br />
+                <label>Tujuan Keberangkatan</label>
+                <input type="text" name="tujuan" id="tujuan" required>
+                <label>Jumlah Tiket</label>
+                <input type="number" name="tiket" id="tiket" min="1" max="10" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <button onclick="tiket()">Cetak</button>
+        <div class="container_hasil" role="alert">
+            <h1 id="hasil"></h1>
+            <p id="hasil_nama"></p>
+            <p id="hasil_email"></p>
+            <p id="hasil_jam"></p>
+            <p id="hasil_tujuan"></p>
+            <p id="hasil_tiket"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

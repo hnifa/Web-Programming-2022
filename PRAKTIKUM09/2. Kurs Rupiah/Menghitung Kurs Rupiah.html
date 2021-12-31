@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Rupiah</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script-kurs.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+    <div class="container"> 
+        <div class="isi_table">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Masukan Nilai</th>
+                        <th>Valas</th>
+                        <th>Nilai Rupiah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>
+                        <input type="number" value="" size="10" id="jumlah_uang">
+                    </td>
+                    <td>
+                        <select onchange="hitung()" id="jenis_valas">
+                            <option></option>
+                            <option id="dollar_us" value="Dollar US">Dollar US</option>
+                            <option id="dollar_singapore" value="Dollar Singapore">Dollar Singapore</option>
+                            <option id="ringgit_malaysia" value="Ringgit Malaysia">Ringgit Malaysia</option>
+                            <option id="yen_jepang" value="Yen Jepang">Yen Jepang</option>
+                            <option id="euro" value="Euro">Euro</option>
+                            <option id="riyal_arab" value="Riyal Arab Saudi">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div id="rupiah">0</div>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </fieldset>
+</body>
+</html>

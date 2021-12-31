@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+/* .container>.box.box$*10{$} */
+
+.container{
+    background-color: beige;
+    display: flex;
+    flex-direction: row; /*arah flex box*/
+    /* align-items: baseline; */
+    flex-wrap: wrap; /*membuat ukuran otomatis*/
+    justify-content: flex-start;
+    /* height: 1000vh; */
+}
+
+.box{
+    padding: 30px;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-align: center;
+    width: 200px;
+}
+
+.box1{
+    background-color: red;
+    /*order: 1; urutan satu-satu dari ujung*/
+}
+.box2{
+    background-color: orange;
+    /* font-size: 48px; */
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: yellowgreen;
+}
+.box5{
+    background-color: skyblue;
+}
+.box6{
+    background-color: red;
+}
+.box7{
+    background-color: orange;
+}
+.box8{
+    background-color: yellow;
+}
+.box9{
+    background-color: yellowgreen;
+}
+.box10{
+    background-color: skyblue;
+}

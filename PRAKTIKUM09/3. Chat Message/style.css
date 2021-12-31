@@ -1,0 +1,13 @@
+.container{
+    width: 100%;
+}
+
+#box {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.container_kirim{
+    width: 50%;
+}

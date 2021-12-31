@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pesanan Barang</title>
+</head>
+<body style="background-color: whitesmoke; text-decoration: none;padding: 0;margin: 0;font-family: sans-serif;">
+    <div>
+        <ul style="background-color: white; border: 1px solid;text-align: left;margin-left: 100px;margin-right: 100px;padding: 10px;border-radius: 10px;">
+            <li style="display: inline; padding-left: 15px;">Home | </li>
+            <li style="display: inline; padding-left: 100px;">Generate Link | </li>
+            <li style="display: inline; padding-left: 100px;">Transaction History | </li>
+            <li style="display: inline; padding-left: 100px;">Policy | </li>
+            <li style="display: inline; padding-left: 100px;">Logout</li>
+        </ul>
+    </div>
+    <div style="float: left;margin-left: 100px;">
+        <img src="assets/img/cross_square.png" alt="cross_square" width="250"> <br>
+        <input type="submit" value="Upload Picture" style="background-color: white; height: 25px;width: 150px;border-left-style: double;">
+    </div>
+    <div style="float: right;margin-right: 100px;margin-left: 100px;">
+        <table>
+            <tr>
+                <td style="padding-right: 100px;"> <label for="form">Titel Here</label></td>
+                <td style="padding-right: 20px;">:</td>
+                <td><input id="form" type="text" style="width: 455px;height: auto;"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding-right: 100px;"> <label for="form-story">Description</label></td>
+                <td style="text-align: left; padding-right: 20px;">:</td>
+                <td><textarea id="form-story" style="resize: none;" name="Description" cols="60" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td style="padding-right: 100px;"><label for="form">Account Number</label></td>
+                <td style="padding-right: 20px;">:</td>
+                <td><input type="number" style="width: 455px;height: auto;"></td>
+            </tr>
+            <tr>
+                <td style="padding-right: 100px;"><label for="form">Bank</label></td>
+                <td style="padding-right: 20px;">:</td>
+                <td>
+                    <select style="width: 300px;height: auto;">
+                        <option>BCA</option>
+                        <option>Mandiri</option>
+                        <option> BRI </option>
+                        <option> Bank Lain </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 100px;"><label for="form">Account Holder</label></td>
+                <td style="padding-right: 20px;">:</td>
+                <td><input type="text" style="width: 400px;height: auto;" placeholder="Name Here"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding-right: 100px;">Transaction</td>
+                <td style="text-align: left; padding-right: 20px;">:</td>
+                <td><input type="number" style="width: 40px;height: auto;">
+    
+                    <div>
+                        *if the transaction is for 3 person, choose 3 form the drop-down list
+                    </div>
+                    <div>
+                        <input id="form-tel" type="checkbox">
+                        <label for="form-tel" style="color: green;"> Send to Mobile Phone </label>
+                    </div>
+                    <div>
+                        <input id="form-email" type="checkbox">
+                        <label for="form-email" style="color: green;"> Send to Email </label>
+                    </div>
+                </td>
+            <tr>
+                <td style="padding-right: 100px;"><label for="form">Send to Mobile Phone</label></td>
+                <td style="padding-right: 20px;">:</td>
+                <td>
+                    <input type="number" style="width: 455px;height: auto;">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 100px;"><label for="form">Send to Email</label></td>
+                <td style="padding-right: 20px;">:</td>
+                <td>
+                    <input type="email" style="width: 455px;height: auto;">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 100px;"></td>
+                <td></td>
+                <td style="border: 1px solid white;padding-right: 20px;">
+                    <input type="button" value="Generate Nobr Link" style="background:rgb(5, 167, 5); color: white;">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
