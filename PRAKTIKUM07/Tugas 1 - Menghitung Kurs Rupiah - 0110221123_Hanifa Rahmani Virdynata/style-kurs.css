@@ -1,0 +1,22 @@
+.container {
+    margin: 15px;
+} 
+
+table {
+    border: 1px solid black;
+}
+
+table tr th {
+    background-color: rgb(163, 180, 255); 
+    border: 1px solid black;
+}
+
+table tr th,
+table tr td {
+    padding: 10px; 
+    font-size: 18px;
+    border: 1px solid black;
+}
+#rupiah{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Chat</title>
+    <script>
+        function pesan(){
+            var text = document.getElementById("text").value;
+            
+            var node = document.createElement("div");
+            var textnode = document.createTextNode(text);
+            node.appendChild(textnode);
+            document.getElementById('isi_chat').appendChild(node);
+        }
+    </script>
+</head>
+<body>
+    <div style="border: 1px solid black; width: 500px; height: 500px;">
+    <div id="isi_chat"></div>
+    </div>
+    <div>
+        <input type="text" id="text" value="" size="59" placeholder="Ketik pesan"/>
+        <button type="submit" id="submit" onclick="pesan();">Kirim</button>
+    </div>
+</body>
+</html>
